@@ -13,9 +13,8 @@ class AppController < Sinatra::Base
 
   post '/search' do
     @query = params[:user_query]
+    @result = RedditScraper.new(@query).scrape
 
-    # How we want to access our search results
-    # @result = RedditScraper.new(@query)
     erb :'search_result'
   end
 
