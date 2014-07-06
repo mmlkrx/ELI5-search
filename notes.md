@@ -22,10 +22,10 @@ ELI5-search/
 ├── Rakefile
 ├── app
 │ ├── controllers
-│ │ └── application_controller.rb
+│ │ └── app_controller.rb
 │ └── views
-│ └── layout.erb
-│ └── index.erb
+│   └── layout.erb
+│   └── index.erb
 ├── config
 │ └── environment.rb
 ├── config.ru
