@@ -1,5 +1,0 @@
-class RedditScraper
-
-  
-
-end
