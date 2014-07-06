@@ -7,6 +7,7 @@ general breakdown
 
 detailed breakdown after user hits "search"
 
+
 1. get user input
 2. search http://www.reddit.com/r/explainlikeimfive/search?q=  user.input  &restrict_sr=on&sort=relevance&t=all
 3. open first search result with title explained
