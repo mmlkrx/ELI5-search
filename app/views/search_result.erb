@@ -8,9 +8,18 @@
                         <div class="controls">
                           <p><h4><%= @query %></h4></p><br><br>
                         </div>
+                        <% if @result.nil? %>
+                          <div class="controls">
+                            <p>Sorry but we can't answer that. <a href="/">Try again.</a></p>
+                          </div><br>
+                        <% else %>
                         <div class="controls">
                           <p><%= @result %></p>
+                        </div><br>
+                        <div class="controls">
+                          <p><h5>Does that answer your question? </h5><a href="/">Yeah. </a><a href="/">No.</a></p>
                         </div>
+                        <% end %>
                     </div>
                 </fieldset>
             </form>
