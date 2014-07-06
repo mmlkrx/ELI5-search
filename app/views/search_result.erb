@@ -3,11 +3,10 @@
         <div class="span12">
             <form class="form-horizontal" method="post" action="/search">
                 <fieldset>
-                    <legend>Search the reddit</legend>
+                    <legend>Here's your search result</legend>
                     <div class="control-group">
                         <div class="controls">
-                            <input name="user_query" placeholder="What would you like to know..." type="text" class="input-large"/>
-                            <button type="submit" class="btn btn-primary">ELI5!</button>
+                            <p><%= @query %></p>
                         </div>
                     </div>
                 </fieldset>
