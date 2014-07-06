@@ -3,7 +3,7 @@ class RedditScraper
   attr_reader :question
 
   def initialize(question)
-    @question = question.downcase.gsub(/\s+|\?/, "+") 
+    @question = question.downcase.gsub(/\s+|\?|!/, "+") 
   end
 
   def search
@@ -14,7 +14,10 @@ class RedditScraper
 
   def choose_question
     page = search
-    question_link = "http://reddit.com" + page.css("a.title.may-blank").first['href']
+    first_question = page.css("a.title.may-blank").first
+    return nil if first_question.nil?
+    
+    question_link = "http://reddit.com" + first_question['href']
     Nokogiri::HTML(open(question_link))
   end
 
@@ -27,7 +30,7 @@ class RedditScraper
   end
 
   def scrape
-    choose_answer
+    choose_question.nil? ? nil : choose_answer
   end
 
 end
