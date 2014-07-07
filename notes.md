@@ -4,9 +4,10 @@ TODO
 - Add github signitures [ ]
 - Add legal stuff [ ]
 - Change 'No.' link, to show the next result [ ]
-- Limit input to 72 [ ]
+- Limit input to 72 [x]
 - Add version tags [ ]
 - adjust layout of search_result.erb [x]
+- Focus on search input on initial page load [x]
 
 
 general breakdown
