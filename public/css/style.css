@@ -1,3 +1,26 @@
 body {
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+div.row {
+  padding-top: 40px;
+}
+
+h1.page-title {
+  font-weight: bold;
+  font-size: 4.5em;
+}
+
+.control-group .controls {
+  margin-left: 0;
+}
+
+input[type="text"] {
+  padding: 5px;
+  line-height: 1.25;
+  font-size: 25px;
+  vertical-align:middle;
+  text-align: center;
+  height: 25px;
+  width: 400px;
 }
