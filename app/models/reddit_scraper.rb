@@ -23,14 +23,20 @@ class RedditScraper
 
   def choose_answer
     question_page = choose_question
+    points = question_page.css('span.score.unvoted')
 
-    points = question_page.css('span.score.unvoted').
-      sort_by {  |p| p.text[0..-7].to_i }.reverse.first
+    return nil if points.empty?
+    
+    points = points.sort_by {  |p| p.text[0..-7].to_i }.reverse.first
     points.parent.parent.css("form div div.md").text
   end
 
+  def valid_answer?
+    (choose_question.nil? || choose_answer.nil?) ? false : true
+  end
+
   def scrape
-    choose_question.nil? ? nil : choose_answer
+    valid_answer? ? choose_answer : nil
   end
 
 end
