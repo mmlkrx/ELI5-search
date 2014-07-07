@@ -24,3 +24,7 @@ input[type="text"] {
   height: 25px;
   width: 400px;
 }
+
+#result {
+  margin-right: 180px;
+}

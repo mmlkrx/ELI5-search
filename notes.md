@@ -1,3 +1,14 @@
+TODO
+
+- Germany needs to beat Brazil tomorrow [ ]
+- Add github signitures [ ]
+- Add legal stuff [ ]
+- Change 'No.' link, to show the next result [ ]
+- Limit input to 72 [ ]
+- Add version tags [ ]
+- adjust layout of search_result.erb [x]
+
+
 general breakdown
 
 1. Search reddit/ELI5
