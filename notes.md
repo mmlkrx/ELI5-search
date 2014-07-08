@@ -1,9 +1,8 @@
 TODO
 
-- Germany needs to beat Brazil tomorrow [ ]
+- Germany needs to beat Brazil today [ ]
 - Format links to hyperlinks [ ]
-- Add github signitures [ ]
-- Add legal stuff [ ]
+- Add github signitures [x]
 - Change 'No.' link, to show the next result [ ]
 - Limit input to 72 [x]
 - Add version tags [x]

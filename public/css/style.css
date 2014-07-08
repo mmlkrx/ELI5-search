@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  margin-bottom: 60px;
 }
 
 div.row {
@@ -27,4 +27,39 @@ input[type="text"] {
 
 #result {
   margin-right: 180px;
+}
+
+.gradient-radial-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  position: absolute;
+  background: #ffffff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #f9fdff 46%, #dee4e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(46%,#f9fdff), color-stop(100%,#dee4e8)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#f9fdff 46%,#dee4e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#f9fdff 46%,#dee4e8 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#f9fdff 46%,#dee4e8 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #ffffff 0%,#f9fdff 46%,#dee4e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dee4e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.body-padding {
+  margin-top: 50px;
+}
+
+legend {
+  border-bottom-color: #a0a7b4;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
 }
