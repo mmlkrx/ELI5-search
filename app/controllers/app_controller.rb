@@ -12,8 +12,9 @@ class AppController < Sinatra::Base
   end
 
   post '/search' do
-    @query = params[:user_query]
-    @result = RedditScraper.new(@query).scrape
+    scraper = RedditScraper.new(params[:user_query])
+    @result = scraper.scrape
+    @question = scraper.normalize_user_query
 
     erb :'search_result'
   end

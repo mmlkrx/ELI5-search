@@ -3,7 +3,15 @@ class RedditScraper
   attr_reader :question
 
   def initialize(question)
-    @question = question.downcase.gsub(/\s+|\?|!/, "+") 
+    @question = parse_input(question)
+  end
+ 
+  def parse_input(input)
+    input.gsub(/[^A-Za-z]/, "+").gsub(/\++/, "+")
+  end
+
+  def normalize_user_query
+    question.gsub(/\++/, " ")
   end
 
   def search

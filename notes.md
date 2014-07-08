@@ -1,13 +1,17 @@
 TODO
 
 - Germany needs to beat Brazil tomorrow [ ]
+- Format links to hyperlinks [ ]
 - Add github signitures [ ]
 - Add legal stuff [ ]
 - Change 'No.' link, to show the next result [ ]
 - Limit input to 72 [x]
-- Add version tags [ ]
+- Add version tags [x]
 - adjust layout of search_result.erb [x]
 - Focus on search input on initial page load [x]
+- Parse input for all edge cases [x]
+
+
 
 
 general breakdown
