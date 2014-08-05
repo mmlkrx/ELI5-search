@@ -16,7 +16,7 @@ class RedditScraper
 
   def search
     question_url = "http://www.reddit.com/r/explainlikeimfive/search?q=" + 
-      self.question + "&restrict_sr=on&sort=relevance&t=all"
+                    self.question + "&restrict_sr=on&sort=relevance&t=all"
     Nokogiri::HTML(open(question_url))
   end
 
