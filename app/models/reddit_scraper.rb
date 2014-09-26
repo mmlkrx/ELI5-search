@@ -32,7 +32,6 @@ class RedditScraper
   def choose_answer
     question_page = choose_question
     points = question_page.css('span.score.unvoted')
-    # binding.pry
     return nil if points.empty?
     
     points = points.sort_by {  |p| p.text[0..-7].to_i }.reverse.first
